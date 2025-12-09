@@ -18,10 +18,7 @@ A custom **ToneEngine** maps six high-level musical descriptors into dozens of l
 - **Slap**
 - **Space**
 
-These feed directly into EQ, compression, transient shaping, saturation, delay, chorus, reverb, and stereo-width processors via the `ParameterMapper`.
-
-(Internally implemented in files such as:  
-`ToneEngine.cpp` :contentReference[oaicite:0]{index=0}, `ParameterMapper.cpp` :contentReference[oaicite:1]{index=1})
+These feed directly into EQ, compression, transient shaping, saturation, delay, chorus, reverb, and stereo-width processors via the [`ParameterMapper`](./Source/ParameterMapper.hpp).
 
 ---
 
@@ -29,25 +26,21 @@ These feed directly into EQ, compression, transient shaping, saturation, delay, 
 
 ### 1. **EQ Section**
 Multi-band, mode-aware EQ with safe coefficient generation and dynamic frequency/gain/Q mapping.  
-See `EQProcessor.cpp` for implementation details.  
-:contentReference[oaicite:2]{index=2}
+See [`EQProcessor.cpp`](./Source/EQProcessor.cpp) for implementation details.  
 
 ### 2. **Dynamics Processor**
 Includes broadband compression, transient shaping, and a frequency-adaptive de-esser path.  
 Dynamic envelopes, makeup gain, and mode-dependent time constants.  
-(`DynamicsProcessor.cpp`)  
-:contentReference[oaicite:3]{index=3}
+[`DynamicsProcessor.cpp`](./Source/DynamicsProcessor.cpp)
 
 ### 3. **Saturation Processor**
 Oversampled waveshaping with multiple models (Tape, Tube, Transistor, Exciter).  
 Bias control, tone filtering, and dry/wet handling.  
-(`SaturationProcessor.cpp`)  
-:contentReference[oaicite:4]{index=4}
+[`SaturationProcessor.cpp`](./Source/SaturationProcessor.cpp)  
 
 ### 4. **Spatial Processor**
 Stereo delay, chorus, reverb, and mid/side width shaping with parameter-dependent mixing.  
-(`SpatialProcessor.cpp`)  
-:contentReference[oaicite:5]{index=5}
+[`SpatialProcessor.cpp`](./Source/SpatialProcessor.cpp) 
 
 ### 5. **Mode Processor**
 Three instrument-driven processing modes:
@@ -57,8 +50,7 @@ Three instrument-driven processing modes:
 - **Clean**
 
 Each rearranges the DSP chain and alters parameter behaviors for more natural response.  
-(`ModeProcessor.cpp`)  
-:contentReference[oaicite:6]{index=6}
+[`ModeProcessor.cpp`](./Source/ModeProcessor.cpp)
 
 ---
 
@@ -69,8 +61,6 @@ The plugin editor uses a modular UI system built around configurable component f
 - Custom knobs via PNG look-and-feel
 - Mode buttons for switching between Rhythm/Lead/Clean
 - A fully optional **debug panel** showing internal parameter mappings  
-  (`PluginEditor.cpp`)  
-  :contentReference[oaicite:7]{index=7}
 
 ---
 
@@ -115,6 +105,6 @@ Source code here is for portfolio and demonstration purposes only.
 ## 📬 Contact
 
 **Khris Finley**
-https://finleyaud.io
+[https://finleyaud.io](www.finleyaud.io)
 
 
