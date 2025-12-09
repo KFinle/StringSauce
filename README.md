@@ -6,7 +6,7 @@ It combines EQ, dynamics, saturation, spatial processing, and mode-dependent beh
 ![StringSauce GUI](./StringSauceHeroShot.png)
 ---
 
-## ✨ Features
+## Features
 
 ### 🎛 Macro-Driven Tone Engine
 A custom **ToneEngine** maps six high-level musical descriptors into dozens of low-level DSP parameters:
@@ -22,7 +22,7 @@ These feed directly into EQ, compression, transient shaping, saturation, delay, 
 
 ---
 
-## 🧩 DSP Architecture
+## DSP Architecture
 
 ### 1. **EQ Section**
 Multi-band, mode-aware EQ with safe coefficient generation and dynamic frequency/gain/Q mapping.  
@@ -54,7 +54,7 @@ Each rearranges the DSP chain and alters parameter behaviors for more natural re
 
 ---
 
-## 🖥 UI & Interaction
+## UI & Interaction
 
 The plugin editor uses a modular UI system built around configurable component factories (`UIFactory`) and a normalized layout (`UILayout`). It supports:
 
@@ -64,7 +64,7 @@ The plugin editor uses a modular UI system built around configurable component f
 
 ---
 
-## 🧪 Technical Highlights
+## Technical Highlights
 
 - **Oversampling** for saturation integrity  
 - **Thread-safe DSP parameter smoothing**
@@ -74,7 +74,7 @@ The plugin editor uses a modular UI system built around configurable component f
 
 ---
 
-## 🧰 Built With
+## Built With
 
 - **C++20**
 - **JUCE Framework** (dsp, GUI, plugin hosting)
@@ -83,7 +83,7 @@ The plugin editor uses a modular UI system built around configurable component f
 
 ---
 
-## 🔧 Current Status
+## Current Status
 
 Actively in development as part of a research plugin pipeline.  
 Core DSP, parameter mapping, and UI architecture are implemented and stable.  
@@ -95,7 +95,7 @@ Upcoming work includes:
 
 ---
 
-## 📄 License
+## License
 
 This project is currently closed-source and not licensed for redistribution.  
 Source code here is for portfolio and demonstration purposes only.
