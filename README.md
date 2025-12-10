@@ -90,7 +90,6 @@ Core DSP, parameter mapping, and UI architecture are implemented and stable.
 Upcoming work includes:
 
 - Final UI artwork pass  
-- Optimized SSE/AVX paths  
 - Cross-platform packaging
 
 ---
